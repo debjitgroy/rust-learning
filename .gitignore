@@ -1,0 +1,14 @@
+# Cargo build output — matches target/ at any depth, e.g. projects/hello_cargo/target/
+target/
+
+# Binaries from plain `rustc` builds (rustc names them after the source file,
+# so they have no extension to glob — add one line per project as you go)
+**/main
+# Backup files from rustfmt
+**/*.rs.bk
+
+# Debug symbols (MSVC)
+*.pdb
+
+# macOS
+.DS_Store
